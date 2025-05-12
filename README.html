@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptyCalc - Node.js Calculator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background: #f8f8f8;
+            padding: 10px;
+            border-left: 3px solid #3498db;
+            overflow-x: auto;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 7px;
+            background: #3498db;
+            color: white;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-right: 5px;
+        }
+        .structure {
+            background: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre;
+        }
+        .license {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>OptyCalc 🚀</h1>
+    
+    <p><strong>A Lightweight Node.js Calculator with Advanced Operations</strong><br>
+    OptyCalc is a versatile command-line calculator supporting basic and advanced mathematical operations.</p>
+
+    <h2>🌟 Features</h2>
+    <ul>
+        <li><strong>Basic Operations</strong>: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></li>
+        <li><strong>Advanced Operations</strong>:
+            <ul>
+                <li>Power (<code>^</code>): <code>2 ^ 3 = 8</code></li>
+                <li>Square Root (<code>√</code>): <code>√16 = 4</code></li>
+            </ul>
+        </li>
+        <li><strong>Input Modes</strong>:
+            <ul>
+                <li><strong>Interactive</strong>: Step-by-step input</li>
+                <li><strong>CLI Arguments</strong>: Quick calculations (e.g., <code>node index.js 5 * 3</code>)</li>
+            </ul>
+        </li>
+        <li><strong>Error Handling</strong>: Prevents invalid operations</li>
+    </ul>
+
+    <h2>🛠️ Installation</h2>
+    <ol>
+        <li>Clone the repository:
+            <pre><code>git clone https://github.com/your-username/OptyCalc.git
+cd OptyCalc</code></pre>
+        </li>
+        <li>Install dependencies (Node.js required):
+            <pre><code>npm install</code></pre>
+        </li>
+    </ol>
+
+    <h2>🚀 Usage</h2>
+    <h3>1. Interactive Mode</h3>
+    <p>Run the calculator and follow prompts:</p>
+    <pre><code>node index.js</code></pre>
+    <p>Example Session:</p>
+    <pre>Enter first number (or √ for sqrt): √
+Enter number: 25
+Result: 5</pre>
+
+    <h3>2. CLI Mode</h3>
+    <p>Directly pass arguments:</p>
+    <pre><code>node index.js 2 ^ 8      # 256
+node index.js √ 9        # 3
+node index.js 10 + 5     # 15</code></pre>
+
+    <h2>📂 Project Structure</h2>
+    <div class="structure">
+OptyCalc/
+├── tools/
+│   ├── add.js       # Addition
+│   ├── subtract.js  # Subtraction
+│   ├── mult.js      # Multiplication
+│   ├── div.js       # Division
+│   ├── pow.js       # Exponentiation
+│   └── sqrt.js      # Square Root
+├── index.js         # Main CLI/Interactive Logic
+└── LICENSE          # MIT License</div>
+
+    <h2>📜 License</h2>
+    <div class="license">
+MIT License
+
+Copyright (c) 2023 Your Name
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</div>
+
+    <h2>✉️ Contact</h2>
+    <p><strong>Your Name</strong><br>
+    - GitHub: <a href="https://github.com/your-username">@your-username</a><br>
+    - Email: your-email@example.com</p>
+</body>
+</html>
